@@ -13,6 +13,15 @@ This prompt architecture follows a consulting-style reasoning framework:
 
 This reflects the **CCE** mindset: *Complete, Conclusive, Explainable* — a consulting-derived discipline adapted to prompt design.
 
+This prompt isn't just about guiding the LLM's internal reasoning — it's about controlling the **external presentation of the decision**. By enforcing a JSON schema aligned with consulting-style output (e.g. executive summaries, key signal breakdowns, actionable next steps), we ensure that:
+
+- The model’s output is immediately actionable
+- Its reasoning trace is auditable
+- Its tone matches high-stakes security reporting environments
+
+This mirrors how consulting teams deliver assessments: structured, justified, and outcome-oriented.
+
+
 ---
 
 ## 📊 Prompt Evaluation Plan
