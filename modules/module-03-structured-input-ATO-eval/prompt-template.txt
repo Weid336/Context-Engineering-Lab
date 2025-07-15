@@ -1,0 +1,61 @@
+[User Profile]  
+- User ID: 302189  
+- Account Age: 3.2 years  
+- Risk Incidents: 1 (last month)  
+- Preferred Login Time: 6:00–9:00 PM UTC  
+
+[Device Info]  
+- Device ID: ios_41ed2  
+- Device Known: No  
+- Fingerprint Similarity: 0.28  
+- Geo Location: Lagos, Nigeria  
+- ASN: MTN Nigeria  
+- VPN/Proxy Detected: Yes
+
+[Recent Behavior Sequence (past 15 min)]  
+1. OTP failed (x3)  
+2. Password reset initiated  
+3. New device login success at 03:02 AM UTC  
+
+[Risk Engine Indicators]  
+- Location mismatch  
+- High device entropy  
+- Time-of-day anomaly  
+- VPN detected  
+- IP reputation: Medium Risk  
+- Device cluster distance: 0.84 from historical centroid
+
+---
+
+[LLM Instruction]  
+You are a security-aware reasoning assistant.
+
+Your task is to assess whether the above login session suggests a **potential Account Takeover (ATO)** scenario.
+
+Apply the following reasoning approach:
+
+1. **Comprehensive Signal Coverage**: Evaluate all context dimensions — device, behavior, temporal, network, user history.
+2. **Deviation Reasoning**: Identify which aspects deviate from known user patterns and why they may indicate risk.
+3. **Structured Risk Attribution**: Assign each risk signal into one of the following categories:  
+   - Behavioral  
+   - Device-related  
+   - Network-related  
+   - Temporal  
+   - Historical Risk Pattern  
+4. **Causal Inference**: Do not make assumptions. Only claim ATO if evidence *accumulates across dimensions*.
+5. **Consulting-style Output**: Your output should be **conclusive, complete, and structured**, as if informing a downstream decision-making engine.
+6. **Output Format**: Return a **JSON object** with the following fields:
+
+```json
+{
+  "ato_likelihood": "Likely" | "Unlikely" | "Ambiguous",
+  "risk_signals": {
+    "behavioral": [ ... ],
+    "device": [ ... ],
+    "network": [ ... ],
+    "temporal": [ ... ],
+    "historical": [ ... ]
+  },
+  "justification": "<Concise explanation in 2–4 sentences>",
+  "recommended_action": "<Optional: lock account, trigger step-up auth, monitor only>"
+}
