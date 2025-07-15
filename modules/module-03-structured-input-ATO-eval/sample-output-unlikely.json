@@ -1,0 +1,20 @@
+{
+  "ato_likelihood": "Unlikely",
+  "risk_signals": {
+    "behavioral": [],
+    "device": [
+      "Known device",
+      "Fingerprint similarity high"
+    ],
+    "network": [
+      "No proxy",
+      "Location matches previous logins"
+    ],
+    "temporal": [
+      "Within preferred login window"
+    ],
+    "historical": []
+  },
+  "justification": "No major risk signals identified. The login originated from a recognized device and location at a normal time. No prior incidents or behavioral anomalies were detected.",
+  "recommended_action": "Allow login and continue monitoring."
+}
