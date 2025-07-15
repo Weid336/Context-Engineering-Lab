@@ -1,0 +1,25 @@
+{
+  "ato_likelihood": "Likely",
+  "risk_signals": {
+    "behavioral": [
+      "Multiple OTP failures",
+      "Password reset attempt"
+    ],
+    "device": [
+      "New device",
+      "Low fingerprint similarity"
+    ],
+    "network": [
+      "VPN detected",
+      "Medium-risk IP reputation"
+    ],
+    "temporal": [
+      "Login at 03:02 AM outside normal window"
+    ],
+    "historical": [
+      "Previous incident 1 month ago"
+    ]
+  },
+  "justification": "The login behavior strongly deviates from the user\u2019s usual pattern, with device, network, and temporal anomalies aligning. Prior incident further increases suspicion.",
+  "recommended_action": "Trigger step-up authentication and monitor account activity."
+}
