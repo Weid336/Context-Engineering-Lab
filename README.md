@@ -22,7 +22,7 @@ Each module explores a different angle of making LLMs **more grounded, interpret
 
 | Module | Title | Status |
 |--------|-------|--------|
-| 01 | Context Graph Construction | 🚧 in progress |
+| 01 | Context Graph Construction | ✅ published |
 | 02 | Retrieval-Enhanced Prompting | ✅ draft complete |
 | 03 | Structured Input & ATO Evaluation | ✅ published |
 | 04 | Agent Routing via Structured Context | 🧭 planned |
