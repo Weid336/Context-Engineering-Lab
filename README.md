@@ -56,6 +56,5 @@ Each module includes:
 
 ---
 
-## 📅 Started: July 2025  
-This is an ongoing personal side project — contributions or feedback welcome.
+👉 Try it: [matcha_prompt_blueprint_demo.ipynb](./demos/matcha_prompt_blueprint_demo.ipynb)
 
