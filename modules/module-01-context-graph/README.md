@@ -3,7 +3,7 @@
 > Learn how to turn structured consulting-style reasoning into modular context graphs, usable by humans and LLMs alike.
 
 🧠 Visual output:  
-![Graph Image](./graphs/matcha_graph_viz.png)
+![Graph Image](./matcha_graph_viz.png)
 
 ## 📂 Repo Structure
 
