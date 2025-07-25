@@ -77,20 +77,22 @@ That’s exactly how AI Orchestrators should treat Agents:
 
 A LangGraph-based architecture where each module reflects a consulting principle:
 
-```
-[Task Entry]
-   ↓
-[Intent Analyzer (TOSCA)]
-   ↓
-[Hypothesis Tree Builder]
-   ↓
-[Prompt Router / Planner]
-   ↓
-[Context Allocator (RAG / memory / history)]
-   ↓
-[Feedback Assessor (evaluation agent)]
-   ↓
-[Output Formatter (Sell)]
+```mermaid
+graph TD
+    A[User Task or Query] --> B[Blueprint Activation]
+    B --> C1[Reasoning Structure Selection]
+    B --> C2[Semantic Cue Injection]
+    C1 --> D[Prompt Construction]
+    C2 --> D
+    D --> E[LLM Execution]
+
+    E --> F[Raw Output]
+    F --> G[Contextual Debugging Loop]
+    G --> H[Refined Output or Agent Planning]
+
+    style B fill:#f9f,stroke:#333,stroke-width:2px
+    style D fill:#bbf,stroke:#333,stroke-width:1.5px
+    style H fill:#bfb,stroke:#222,stroke-width:1.5px
 ```
 
 - Applies to:
