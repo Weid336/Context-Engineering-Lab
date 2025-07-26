@@ -1,4 +1,4 @@
-# 🧠 Context Engineering Lab · Module 3
+# 🧠 Context Engineering Lab · Module 2
 
 ## ✫️ Title
 
