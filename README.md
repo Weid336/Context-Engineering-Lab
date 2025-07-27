@@ -20,12 +20,14 @@ Each module explores a different angle of making LLMs **more grounded, interpret
 
 ## 🧪 Modules
 
-| Module | Title | Status |
-|--------|-------|--------|
-| 01 | Context Graph Construction | ✅ published |
-| 02 | Retrieval-Enhanced Prompting | ✅ published |
-| 03 | Structured Input & ATO Evaluation | ✅ published |
-| 04 | Agent Routing via Structured Context | ✅ published |
+## 🧩 Modules
+
+| No. | Module | Description |
+|-----|--------|-------------|
+| 01 | [Context Graph](./module-01-context-graph) | Build reasoning flow via structured context graph |
+| 02 | [Retrieval-Enhanced Prompting](./module-02-Retrieval-Enhanced-Prompting) | Boost response quality using vector-based retrieval |
+| 03 | [Structured ATO Evaluation](./module-03-structured-input-ATO-eval) | Evaluate structured input pipelines for account takeover detection |
+| 04 | [Agent Routing via Structured Context](./module-04-Agent-Routing-via-Structured-Context) | Select and orchestrate agents based on parsed semantic schema |
 
 ---
 
